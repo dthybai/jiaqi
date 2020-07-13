@@ -1,0 +1,478 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/login/login",
+			"style":{
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+            "path" : "pages/home/home",
+            "style" : {
+				// #ifdef MP
+				"navigationBarTitleText": "Dloud商城",
+				"enablePullDownRefresh": true,
+				//"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "搜索",
+							"disabled": true,
+							"placeholderColor": "#ffffff"
+						},
+						"buttons": [{
+								"fontSrc": "/static/iconfont.ttf",
+								// "select": true,
+								"text": "\ue8c8北京",
+								"fontSize": "16",
+								"color": "#303133",
+								"width":"70px",
+								"float": "left",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "\ue60d",
+								"fontSize": "18",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)"
+								// "redDot": true
+							}
+						]
+					}
+					
+				}
+			}
+        }
+		
+        ,{
+            "path" : "pages/search-page/search-page",
+			"style":{
+				//允许下拉刷新
+				// "app-plus" : {  
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+        ,{
+            "path" : "components/com-search-history/com-search-history",
+            "style" : {
+				// "app-plus" : {  
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+        ,{
+            "path" : "pages/classify/classify",
+            "style" : {
+            	// "app-plus" : {  
+            	// 	"statusbar": {  
+            	// 	  "immersed": "none"  
+            	// 	} 
+            	// }
+            }
+        }
+        ,{
+            "path" : "pages/browseHistory/browseHistory",
+            "style" : {
+				// "app-plus" : {  
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        },
+		{
+		    "path" : "pages/myInformation/myInformation",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/mySetPassword/mySetPassword",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/mySetpayPassword/mySetpayPassword",
+		    "style" : {}
+		},
+		{
+			"path" : "pages/mySetMobile/mySetMobile",
+			"style" : {}
+		}
+		// 视频详情
+        ,{
+            "path" : "pages/video-details/video-details",
+            "style":{
+                  "navigationBarTitleText": "视频详情",
+                         "app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+                           "titleNView": {
+                             // "type": "transparent", //透明渐变导航栏 App-nvue 2.4.4+ 支持
+                            
+                           }
+                         }
+            }
+        }
+        ,{
+            "path" : "components/com-search-history/com-search-history",
+            "style" : {}
+        }
+		// 视频分类
+        ,{
+            "path" : "pages/classify/classify",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {
+					//  "app-plus": {
+					// 	 "titleNView": false
+					// 	 } 
+					}
+        },{
+            "path" : "pages/order/order",
+            "style" : {
+				//"enablePullDownRefresh": true
+					 // "app-plus" : {
+					 // 	"statusbar": {  
+					 // 		"background":"#ffffff"
+					 // 		}
+					 // 	}
+					}
+        }
+		// 购买视频
+        ,{
+            "path" : "pages/pays-video-page/pays-video-page",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 		"immersed": "true",
+				// 		"background":"#ffffff"
+				// 		}
+				// 	}
+			}
+        }
+		// 成功订单
+        ,{
+            "path" : "pages/successful-order/successful-order",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+		// 门票页面
+        ,{
+            "path" : "pages/tickets-page/tickets-page",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+		// 购买门票
+        ,{
+            "path" : "pages/pays-tickets-page/pays-tickets-page",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 		"immersed": "true",
+				// 		"background":"#ffffff"
+				// 		}
+				// 	}
+			}
+        }
+		// 选择持票人
+        ,{
+            "path" : "pages/select-ticket-holder/select-ticket-holder",
+            "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 	  "immersed": "none"  
+				// 	} 
+				// }
+			}
+        }
+		// 选择日期
+        ,{
+            "path" : "pages/select-date/select-date",
+            "style" : {
+            	// "app-plus" : {
+            	// 	"statusbar": {  
+            	// 	  "immersed": "none"  
+            	// 	} 
+            	// }
+            }
+        }
+		// 选择座位
+        ,{
+            "path" : "pages/select-seat/select-seat",
+            "style" : {
+            	// "app-plus" : {
+            	// 	"statusbar": {  
+            	// 	  "immersed": "none"  
+            	// 	} 
+            	// }
+            }
+        }
+		// 提交订单
+        ,{
+					"path" : "pages/pays-place-order/pays-place-order",
+					"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"background":"#ffffff"
+					// 		}
+					// 	}
+					}
+				},
+			// 视频订单详情》待付款
+				{
+					"path" : "pages/order-eravideo/order-eravideo",
+					"style" : {
+						// "app-plus" : {
+						// 	"statusbar": {  
+						// 		"immersed": "true",
+						// 		"background":"#ffffff"
+						// 		}
+						// 	}
+					}
+				},
+			{
+				"path":"pages/ticket-description/ticket-description",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	} 
+					// }
+				}
+			},
+			// 门票订单》详情
+			{
+				"path" : "pages/order-eratickets/order-eratickets",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "true",
+					// 		"background":"#ffffff"
+					// 		}
+					// 	}
+				}
+			}
+			// 我的视频
+		,{
+			"path" : "pages/page-my-videos/page-my-videos",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	} 
+					// }
+				}
+			},
+		// 我的--我的收藏
+			{
+				"path":"pages/mycollection/mycollection",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			},
+		// 我的--我的门票
+			{
+				"path" : "pages/page-my-tickets/page-my-tickets",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			// 售后 
+			,{
+				"path" : "pages/pages-saleafter/pages-saleafter",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			// 帮助反馈
+			,{
+				"path" : "pages/pages-saleafter/pages-salehelp",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			// 我要反馈
+			,{
+				"path" : "pages/pages-saleafter/pages-myhelp",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			//联系我们
+			,{
+				"path" : "pages/pages-saleafter/pages-uscontact",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			//常用联系人
+			,{
+				"path" : "pages/page-contactsfrequent/page-contactsfrequent",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			//添加联系人
+			,{
+				"path" : "pages/page-contactsfrequent/page-addcontactsfrequent",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			// 我的评价
+			,{
+				"path" : "pages/page-contactsfrequent/page-myevaluation",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			// 申请售后
+			,{
+				"path" : "pages/page-contactsfrequent/page-salesapply",
+				"style" : {
+					// "app-plus" : {
+					// 	"statusbar": {  
+					// 		"immersed": "none"  
+					// 	}
+					// }
+				}
+			}
+			//我的账户
+        ,{
+            "path" : "pages/myAccount/myAccount",
+            "style" : {
+				"enablePullDownRefresh": true
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 		"immersed": "none"  
+				// 	}
+				// }
+			}
+        },
+		{
+		    "path" : "components/uni-password/uni-password",
+		    "style" : {
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 		"immersed": "none"  
+				// 	}
+				// }
+			}
+		},
+		{
+            "path" : "pages/myAccount-detail/myAccount-detail",
+            "style" : {
+				"enablePullDownRefresh": true
+				// "app-plus" : {
+				// 	"statusbar": {  
+				// 		"immersed": "none"  
+				// 	}
+				// }
+			}
+        }
+       
+    ],
+	"globalStyle": {
+		"titleNView": false,
+		 // "navigationStyle":"custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar":{
+		"color":"#cccccc",
+		"selectedColor":"#cccccc",
+		"backgroundColor": "#ffffff",
+		"list":[
+			{
+				"pagePath":"pages/home/home",
+				"iconPath":"static/img/home.png",
+				"selectedIconPath":"static/img/homepitch.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/order/order",
+				"iconPath":"static/img/order.png",
+				"selectedIconPath":"static/img/orderpitch.png",
+				"text":"订单"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"static/img/my.png",
+				"selectedIconPath":"static/img/mypitch.png",
+				"text":"我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
